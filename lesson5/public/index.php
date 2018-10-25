@@ -4,6 +4,8 @@ include ROOT_DIR . "services/Autoloader.php";
 spl_autoload_register([new \app\services\Autoloader(), 'loadClass']);
 
 // Автозагрузчик Composer, который, в свою очередь, загрузит Twig. Если Twig был установлен другим способом, понадобится автозагрузчик Twig
+//Игорь Полуянов:($loader - это не надо было выносить в индекс. 
+//Ведь контроллер зависит от интерфейса IRenderer и должен принимать объекты именно с таким интерфейсом.
 require_once ROOT_DIR . 'vendor/autoload.php';
 $loader = new Twig_Loader_Filesystem(ROOT_DIR . 'views/twig');
 $twig = new Twig_Environment($loader
