@@ -1,0 +1,12 @@
+{
+    "name": "user/lesson6",
+    "authors": [
+        {
+            "name": "Ilon Mask",
+            "email": "ilon.mask@spaceX.tesla"
+        }
+    ],
+    "require": {
+      "twig/twig" : "*"
+    }
+}
