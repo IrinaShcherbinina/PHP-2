@@ -1,0 +1,16 @@
+{
+    "name": "user/hometask-7",
+    "authors": [
+        {
+            "name": "Ilon Mask",
+            "email": "ilon.mask@spaceX.tesla"
+        }
+    ],
+    "require": {
+        "twig/twig" : "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^4.8",
+        "phpunit/php-invoker" : "*"
+    }
+}
